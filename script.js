@@ -21,6 +21,6 @@ function convert() {
 }
 function Result(input, output, temp) {
     //code
-    //let result
-    return result;
+    let result = temp;
+    return result +" "+ output[0];
 }

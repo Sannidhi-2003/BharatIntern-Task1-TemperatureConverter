@@ -11,32 +11,44 @@
 
 <body>
   <div class="main">
-    <form>
-      Input Temperature
-      <br>
-      <div id="input-temp">
-        <label for="i_celsius">Celsius:</label><input type="radio" id="i_celsius" name="input_temperature"
-          value="celsius">
-        <label for="i_fahrenheit">Fahrenheit:</label><input type="radio" id="i_fahrenheit" name="input_temperature"
-          value="fahrenheit">
-        <label for="i_kelvin">Kelvin:</label><input type="radio" id="i_kelvin" name="input_temperature" value="kelvin">
+    <h1>TEMPERATURE CONVERTER</h1>
+    <div class="form-container-wrapper">
+      <div class="form-container">
+        <form>
+          <div class="name">
+            Input Temperature
+          </div>
+          <br>
+          <div id="input-temp">
+            <label for="i_celsius">Celsius:</label><input type="radio" id="i_celsius" name="input_temperature"
+              value="Celsius">
+            <label for="i_fahrenheit">Fahrenheit:</label><input type="radio" id="i_fahrenheit" name="input_temperature"
+              value="Fahrenheit">
+            <label for="i_kelvin">Kelvin:</label><input type="radio" id="i_kelvin" name="input_temperature"
+              value="Kelvin">
+          </div>
+          <hr>
+          <input name="tempValue" placeholder="temperature" type="text" id="temperature">
+          <hr>
+          <div class="name">
+            Output Temperature
+          </div>
+          <br>
+          <div id="output-temp">
+            <label for="o_celsius">Celsius:</label><input type="radio" id="o_celsius" name="output_temperature"
+              value="Celsius">
+            <label for="o_fahrenheit">Fahrenheit:</label><input type="radio" id="o_fahrenheit" name="output_temperature"
+              value="Fahrenheit">
+            <label for="o_kelvin">Kelvin:</label><input type="radio" id="o _kelvin" name="output_temperature"
+              value="Kelvin">
+          </div>
+          <hr>
+        </form>
+        <div class="submit">
+          <button onclick="convert()">Convert</button>
+        </div>
       </div>
-      <hr>
-      Enter the temperature :<input name="tempValue" type="text">
-      <hr>
-      Output Temperature
-      <br>
-      <div class="output-temp">
-        <label for="o_celsius">Celsius:</label><input type="radio" id="o_celsius" name="output_temperature"
-          value="celsius">
-        <label for="o_fahrenheit">Fahrenheit:</label><input type="radio" id="o_fahrenheit" name="output_temperature"
-          value="fahrenheit">
-        <label for="o_kelvin">Kelvin:</label><input type="radio" id="o _kelvin" name="output_temperature" value="kelvin">
-      </div>
-      <br>
-      <hr>
-    </form>
-    <button onclick="convert()">Convert</button>
+    </div>
     <div class="output"></div>
   </div>
 </body>
