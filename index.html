@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="main">
-    <form onsubmit="()">
-
-      Enter the temperature  :<input type="text">
+    <form>
+      Input Temperature
+      <br>
+      <div id="input-temp">
+        Celsius:<input type="radio" name="input_temperature" value="celsius">
+        Fahrenheit:<input type="radio" name="input_temperature" value="fahrenheit">
+        Kelvin:<input type="radio" name="input_temperature" value="kelvin">
+      </div>
+      <hr>
+      Enter the temperature :<input name="tempValue" type="text">
+      <hr>
+      Output Temperature
+      <br>
+      <div class="output-temp">
+        Celsius:<input type="radio" name="output_temperature" value="celsius">
+        Fahrenheit:<input type="radio" name="output_temperature" value="fahrenheit">
+        Kelvin:<input type="radio" name="output_temperature" value="kelvin">
+      </div>
+      <br>
+      <hr>
     </form>
+    <button onclick="convert()">Convert</button>
+    <div class="output"></div>
   </div>
 </body>
+
 </html>
